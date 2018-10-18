@@ -1,19 +1,19 @@
 const auth = require('./firebase').auth;
 
 module.exports = (function() {
-    function signup(email, password) {
+    function createUserWithEmailAndPassword(email, password) {
         return auth.createUserWithEmailAndPassword(email, password);
     }
-    function signInWithCredential(credential) {
-        return auth.signInWithCredential(credential);
-    }
+    // function signInWithCredential(credential) {
+    //     return auth.signInWithCredential(credential);
+    // }
     function signInWithEmailAndPassword(email, password) {
         return auth.signInWithEmailAndPassword(email, password);
     }
 
     return {
-        signup: signup,
-        signInWithCredential: signInWithCredential,
+        createUserWithEmailAndPassword: createUserWithEmailAndPassword,
+        // signInWithCredential: signInWithCredential,
         signInWithEmailAndPassword: signInWithEmailAndPassword
     }
 })();

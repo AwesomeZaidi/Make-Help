@@ -18,15 +18,19 @@ module.exports = function (app) {
     app.get('/signup/', (req, res) => {
         res.render('signup');
     });
+    
     // POST USER then sign user in (broken) why /users/?
     app.post('/users/', (req, res) => {
         const email = req.body.email;
         const password = req.body.password;
-        User.signup(email, password)
-        .then(userCredential => User.signInWithCredential(userCredential.credential))
-        // unfortunately after sign up, sign in won't follow so we'll do  it the long way.
-        .then(user => res.render('dashboard', { email: user.email }))
-        .catch(console.error);
+        User.createUserWithEmailAndPassword(email, password)
+        .then(userCredential => {
+            // console.log(userCredential);
+            User.signInWithEmailAndPassword(email, password)
+            // unfortunately after sign up, sign in won't follow so we'll do  it the long way.
+            .then(user => res.render('dashboard', { email: userCredential.user.email }))
+            .catch(console.error);
+        });
     });
 
 }
