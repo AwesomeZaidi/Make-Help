@@ -1,0 +1,238 @@
+@import 'variables.scss';
+
+body {
+    margin: 0px;
+}
+.signin {
+    background-position: center;
+    // background-image: url(../images/home-top-mobile.jpg);
+    background-color: $darkbg;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    padding: 60px 10px;
+    // background-color: $lightbg;
+    text-align: center;
+    .signin-section {
+        margin: 0 auto;
+        display: inline-block;
+        max-width: 86vw;
+        background-color: $light;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px; 
+        border: 2px solid $main;
+        padding: 16px 0px 0px 24px;
+        h1 {
+            color: $text;
+            font-family: "montserrat-regular", sans-serif;
+            margin-bottom: 12px;
+        }
+        input {
+            font-family: "montserrat-regular", sans-serif;
+            width: 200px;
+            height: 24px;
+            padding: 5px 8px;
+            margin: 10px 0px;
+            border-radius: 3px;
+            border: .5px solid rgba(74,74,74,.5);
+            font-size: 13px;       
+        }
+        button {
+            margin-top: 8px;
+            padding: 11px 36px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px; 
+            background-color: $main;
+            border: 1px solid $main;
+            color: $light;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        button:hover {
+            -webkit-transition: $light 2s ease-out;
+            -moz-transition: $light 2s ease-out;
+            -o-transition: $light 2s ease-out;
+            transition: $light 2s ease-out;
+            background-color: $main;
+            color: $white;
+        }
+        p,a {
+            color: $darkbg;
+            font-family: "montserrat-regular", sans-serif;
+            font-size: 13px;
+            text-decoration: none;
+        }
+    }
+}
+
+.dashboard {
+    background-position: center;
+    // background-image: url(../images/home-top-mobile.jpg);
+    background-color: $light;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    padding: 60px 10px;
+    margin-bottom: 16px;
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 16px 8px 0px 8px;
+        background-image: url(http://thebridge.jp/wp-content/uploads/2014/07/jeremy-rossmann.jpg);
+        border-radius: 8px;
+        height: 420px;
+        h1 {
+            font-size: 32px;
+            margin: 0px;
+            color: white;
+            font-family: "montserrat-regular", sans-serif;
+            margin-left: 16px;
+        }
+        p {
+            color: $light;
+            font-size: 18px;
+            font-family: "montserrat-thin", sans-serif;
+            margin-left: 16px;
+            margin-top: 8px;
+        
+        }
+    }
+    .card.card-hide {
+        z-index: -1;
+        background-image: url(https://media.licdn.com/dms/image/C5603AQFaQKqMpoycnA/profile-displayphoto-shrink_800_800/0?e=1545264000&v=beta&t=Fu6CFIF4EDIGJrWiN_LmZ_1Bv81tsWglTGTJVyI5hqE)
+    }
+    .button-section {
+        display: flex;
+        justify-content: center;
+        .nope {
+            color: $danger;
+        }
+        .like {
+            color: $secondary;
+        }
+        .superlike {
+            color: $main;
+        }
+    }
+    .button-section > * {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        font-size: 24px;
+        margin: 8px 20px;
+        background-color: white;
+    }
+}
+
+// FONTS CODE
+/* ===================================================================
+ * fonts.scss
+ *
+ * ------------------------------------------------------------------- */
+
+
+/*
+ * lora
+================================================================================ */
+@font-face {
+    font-family: "lora-regular";
+    src: url("../fonts/lora/lora-regular-webfont.woff2") format("woff2"), url("../fonts/lora/lora-regular-webfont.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "lora-italic";
+    src: url("../fonts/lora/lora-italic-webfont.woff2") format("woff2"), url("../fonts/lora/lora-italic-webfont.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "lora-bold";
+    src: url("../fonts/lora/lora-bold-webfont.woff2") format("woff2"), url("../fonts/lora/lora-bold-webfont.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "lora-bold-italic";
+    src: url("../fonts/lora/lora-bolditalic-webfont.woff2") format("woff2"), url("../fonts/lora/lora-bolditalic-webfont.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/*
+ * montserrat
+================================================================================ */
+@font-face {
+    font-family: "montserrat-black";
+    src: url("../fonts/montserrat/montserrat-black-webfont.woff2") format("woff2"), url("../fonts/montserrat/montserrat-black-webfont.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "montserrat-extrabold";
+    src: url("../fonts/montserrat/montserrat-extrabold-webfont.woff2") format("woff2"), url("../fonts/montserrat/montserrat-extrabold-webfont.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "montserrat-bold";
+    src: url("../fonts/montserrat/montserrat-bold-webfont.woff2") format("woff2"), url("../fonts/montserrat/montserrat-bold-webfont.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "montserrat-semibold";
+    src: url("../fonts/montserrat/montserrat-semibold-webfont.woff2") format("woff2"), url("../fonts/montserrat/montserrat-semibold-webfont.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "montserrat-medium";
+    src: url("../fonts/montserrat/montserrat-medium-webfont.woff2") format("woff2"), url("../fonts/montserrat/montserrat-medium-webfont.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "montserrat-regular";
+    src: url("../fonts/montserrat/montserrat-regular-webfont.woff2") format("woff2"), url("../fonts/montserrat/montserrat-regular-webfont.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "montserrat-light";
+    src: url("../fonts/montserrat/montserrat-light-webfont.woff2") format("woff2"), url("../fonts/montserrat/montserrat-light-webfont.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "montserrat-extralight";
+    src: url("../fonts/montserrat/montserrat-extralight-webfont.woff2") format("woff2"), url("../fonts/montserrat/montserrat-extralight-webfont.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "montserrat-thin";
+    src: url("../fonts/montserrat/montserrat-thin-webfont.woff2") format("woff2"), url("../fonts/montserrat/montserrat-thin-webfont.woff") format("woff");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/*# sourceMappingURL=fonts.css.map */

@@ -10,3 +10,4 @@ firebase.initializeApp({
 
 exports.db = firebase.firestore();
 exports.auth = firebase.auth();
+exports.firestore = firebase.firestore();

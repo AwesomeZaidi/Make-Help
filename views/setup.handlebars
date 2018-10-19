@@ -1,0 +1,23 @@
+<form action="/dashboard/" method="POST">
+    <h1>Hi, {{first_name}}, please finish your profile</h1>
+    
+    <label for="picture">Profile Picture</label>
+    <input name="picture" type="file" accept="image/*"><br>
+    {{!-- <input name="picture" type="file" accept="image/*" onchange="previewFile()"><br> --}}
+    <img src="" height="200" alt="Image preview...">
+    
+    <label for="strengths_list">What can you other students with?</label>
+    <select name="strengths_list" multiple>
+        <option value="frontend">Frontend</option>
+        <option value="backend">Backend</option>
+        <option value="ios">iOS</option>
+    </select>
+    
+    <label for="weakness_list">What do you want help in?</label>
+    <select name="weakness_list" multiple>
+        <option value="frontend">Frontend</option>
+        <option value="backend">Backend</option>
+        <option value="ios">iOS</option>
+    </select>
+    <button type="submit">Continue</button>
+</form>
