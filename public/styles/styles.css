@@ -106,6 +106,43 @@ body {
     margin: 8px 20px;
     background-color: white; }
 
+.signup-form {
+  background-position: center;
+  background-color: #f3f3f3;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  padding: 60px 10px;
+  display: flex;
+  flex-direction: column; }
+  .signup-form input {
+    font-family: "montserrat-regular", sans-serif;
+    width: 200px;
+    height: 24px;
+    padding: 5px 8px;
+    margin: 10px 0px;
+    border-radius: 3px;
+    border: 0.5px solid rgba(74, 74, 74, 0.5);
+    font-size: 13px; }
+  .signup-form button {
+    margin-top: 8px;
+    padding: 11px 36px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #087cb8;
+    border: 1px solid #087cb8;
+    color: #f3f3f3;
+    text-decoration: none;
+    text-transform: uppercase; }
+  .signup-form button:hover {
+    -webkit-transition: #f3f3f3 2s ease-out;
+    -moz-transition: #f3f3f3 2s ease-out;
+    -o-transition: #f3f3f3 2s ease-out;
+    transition: #f3f3f3 2s ease-out;
+    background-color: #087cb8;
+    color: #fff; }
+
 /* ===================================================================
  * fonts.scss
  *
