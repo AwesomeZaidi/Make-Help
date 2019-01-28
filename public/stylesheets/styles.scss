@@ -8,17 +8,20 @@ html, body {
 }
 
 // Colors
-$bg-color: #1370FB;
-$dot-color: #3882E8;
+// $bg-color: #1370FB;
+// $dot-color: #3882E8;
 
-// Dimensions
-$dot-size: 2px;
-$dot-space: 22px;
+// $bg-color: #f8f8ff;
+// $dot-color: rgba(115, 106, 128, 0.974);
 
-body {
-	background:
-		linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
-		linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
-		$dot-color;
-	background-size: $dot-space $dot-space;
-}
+// // Dimensions
+// $dot-size: 2px;
+// $dot-space: 22px;
+
+// body {
+// 	background:
+// 		linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
+// 		linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center, $dot-color;
+//     background-size: $dot-space $dot-space;
+//     transform: rotate(45deg);
+// }

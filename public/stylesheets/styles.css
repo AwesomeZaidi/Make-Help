@@ -39,9 +39,4 @@ html, body {
   font-size: 16px;
 }
 
-body {
-  background: linear-gradient(90deg, #1370FB 20px, transparent 1%) center, linear-gradient(#1370FB 20px, transparent 1%) center, #3882E8;
-  background-size: 22px 22px;
-}
-
 /*# sourceMappingURL=styles.css.map */
