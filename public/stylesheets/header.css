@@ -1,0 +1,119 @@
+/* Screen reader only */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
+  
+  /* Button styling */
+  .menu-toggle {
+    display: inline-block;
+    padding: .75em 15px;
+    line-height: 1em;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  .menu-toggle:hover,
+  .menu-toggle:focus {
+    color: #c00;
+  }
+  
+  /*
+   Default styles + Mobile first
+   Offscreen menu style
+  */
+  .main-menu {
+    position: absolute;
+    display: none;
+    left: -200px;
+    top: 0;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: visible;
+    transition: left 0.3s ease,
+          box-shadow 0.3s ease;
+    z-index: 999;
+  }
+  
+  .main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 2.5em 0 0;
+    /* Hide shadow w/ -8px while 'closed' */
+    -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+       -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+            box-shadow: -8px 0 8px rgba(0,0,0,.5);
+    min-height: 100%;
+    width: 200px;
+    background: #1a1a1a;
+  }
+  
+  .main-menu a {
+    display: block;
+    padding: .75em 15px;
+    line-height: 1em;
+    font-size: 1em;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #383838;
+  }
+  
+  .main-menu li:first-child a {
+    border-top: 1px solid #383838;
+  }
+  
+  .main-menu a:hover,
+  .main-menu a:focus {
+    background: #333;
+    text-decoration: underline;
+  }
+  
+  .main-menu .menu-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  
+  /*
+   More to come here...
+  */
+  
+  
+  /*
+   Demo purposes only
+  */
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  
+  header {
+    padding: 20px;
+    display: flex;
+    align-items: baseline;
+  }
+  
+  article {
+    padding: 30px;
+    width: 55em;
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+  
+  article h2 {
+    font-weight: 500;
+    font-size: 28px;
+  }
+  
+  .logo {
+    margin: 0 30px 0 10px;
+    font-size: 1.5em;
+  }
