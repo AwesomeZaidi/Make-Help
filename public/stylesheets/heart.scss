@@ -1,0 +1,39 @@
+*, :before, :after {
+    box-sizing: border-box;  
+}
+  
+$border: .2em;
+$size: 3em;
+$color: #59A8FB;
+
+  
+.heart {
+  width: $size;
+  height: $size;
+  position: relative;
+  transform: rotate(-45deg);
+  border: $border solid $color;
+  border-radius: $size/50;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  &:before, &:after {
+    content: '';
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    position: absolute;
+    border: $border solid $color;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+  }
+  &:before {
+    top: -$size/2;
+    left: -$border;
+    transform: rotate(45deg);
+  }
+  &:after {
+    top: -$border;
+    left: $size/2 - $border*2;
+    transform: rotate(135deg);
+  }
+}

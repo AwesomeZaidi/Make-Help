@@ -1,21 +1,41 @@
 {
-  "name": "makehelp2",
+  "name": "client-site",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Step by step game plan. Here are some routes we can built.",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "test": "mocha test/*_test.js",
+    "test-watch": "nodemon --exec 'npm test'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AwesomeZaidi/Reddit-Clone.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AwesomeZaidi/Reddit-Clone/issues"
+  },
+  "homepage": "https://github.com/AwesomeZaidi/Reddit-Clone#readme",
   "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
+    "basic-auth": "^2.0.1",
     "body-parser": "^1.18.3",
+    "dotenv": "^6.1.0",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
-    "firebase": "^5.5.4",
-    "firebase-admin": "^6.0.0",
-    "firebase-auth-node": "^1.0.3",
-    "firebaseui": "^3.4.1"
+    "handlebars-helpers": "^0.10.0",
+    "handlebars-intl": "^1.1.2",
+    "hbs": "~4.0.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.4.1",
+    "nodemailer": "^4.7.0",
+    "particlesjs": "^2.2.3",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
+    "mocha": "^5.2.0"
   }
 }
